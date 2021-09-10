@@ -1,4 +1,5 @@
-# Algo
+#  About & guide :
+
 A little excersie i made for a test 
 
 Works via http method calling a MercadoLibre Api (Thanks Mercadolibre)

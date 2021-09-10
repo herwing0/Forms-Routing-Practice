@@ -7,6 +7,15 @@ Works via http method calling a MercadoLibre Api (Thanks Mercadolibre)
 - Single page app
 - Not much effort on css 
 
+****************************************
+Steps to open:
+
+.- git clone https://github.com/herwing0/Forms-Routing-Practice.git
+.- cd Forms-Routing-Practice
+.- npm install
+.- ng serve 
+.- browse http://localhost:4200/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
 
 ## Development server

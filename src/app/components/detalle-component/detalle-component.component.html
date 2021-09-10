@@ -1,0 +1,25 @@
+<div class="row m-3">
+  <div class="col-md-4">
+    <img [src]="this.productoDetalle.thumbnail" class="img-fluid">
+    <br><br>
+    <a class="center btn btn-outline-danger btn-blick" [routerLink]="['/catalogo']">Volver al catalogo</a>
+  </div>
+  <div class="col-md-8">
+    <h3>{{this.productoDetalle.title}}</h3>
+    <hr>
+    <h4> Detalles :  </h4>
+    <ul>
+      <li>
+       <strong>Precio:  </strong> {{this.productoDetalle.price}} $
+      </li>
+      <li>
+        <strong>Vendidos: </strong> {{this.productoDetalle.sold_quantity}} unidades
+      </li>
+      <li>
+        <strong>Localidad: </strong> {{this.productoDetalle.address.city_name}}
+      </li>
+        <a class="center btn btn-outline-primary btn-blick" [href]="this.productoDetalle.permalink">Ir a la pagina original del producto</a>
+    </ul>
+  </div>
+  <br><br>
+</div>

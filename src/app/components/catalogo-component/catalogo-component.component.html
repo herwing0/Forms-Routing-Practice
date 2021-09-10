@@ -1,0 +1,10 @@
+<div *ngIf="productosResult" class="row m-3 ml-1 center" >
+<div class="card border-primary mb-3 animated fadeIn fast" style="max-width: 18rem;" *ngFor="let post of productosResult; let i = index">
+  <div class="card-body text-primary">
+    <h5 class="card-title">{{post.title}}</h5>
+    <img class="card-img-top" [src]="post.thumbnail" alt="Card image cap">
+    <p class="card-text">{{post.body}}</p>
+  </div>
+  <div class="card-header center"><button (click)="redirectToProduct(i)" type="button" class="btn btn-info">Detalles del Producto </button></div>
+</div>
+</div>

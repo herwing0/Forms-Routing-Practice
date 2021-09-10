@@ -1,0 +1,36 @@
+<div class="m-5">
+<form [formGroup]="registerForm" (ngSubmit)="submitRegistro()" class="row g-3">
+  <div class="col-md-6">
+    <label class="form-label">Nombre <span class="required-field" *ngIf="registerForm.get('name')?.errors && registerForm.get('name')?.dirty"><strong>*</strong></span></label>
+    <input type="text" class="form-control" formControlName="name">
+  </div>
+  <div class="col-md-6">
+    <label class="form-label" >Apellido <span class="required-field form-label" *ngIf="registerForm.get('lastname')?.errors && registerForm.get('lastname')?.dirty"><strong>*</strong></span></label>
+    <input type="text" class="form-control" formControlName="lastname">
+  </div>
+  <div class="col-12">
+    <label class="form-label">Email <span class="required-field" *ngIf="registerForm.get('email')?.errors && registerForm.get('email')?.dirty"><strong>*</strong></span></label>
+    <input type="email" class="form-control" formControlName="email">
+  </div>
+  <div class="col-12">
+    <label class="form-label" for="">Password <span class="required-field" *ngIf="registerForm.get('password')?.errors && registerForm.get('password')?.dirty"><strong>*</strong></span> </label>
+    <input class="form-control" type="password" formControlName="password">
+    <div class="required-field" *ngIf="registerForm.get('password')?.hasError('minlength')">
+     Minimo 6 caracteres
+    </div>
+    <div class="required-field" *ngIf="registerForm.get('password')?.hasError('maxlength')">
+      Maximo 10 caracteres
+     </div>
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Telefono </label>
+    <input class="form-control" type="text" formControlName="telefono">
+  </div>
+  <div class="col-12">
+    <button type="submit" value="Registro" class="btn btn-primary">Registrarse</button>
+  </div>
+</form>
+</div>
+
+
+
